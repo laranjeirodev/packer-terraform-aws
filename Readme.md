@@ -29,6 +29,7 @@ Terraform will create an infrastructure containing:
  Considering the explanation above, two configuration files need to be visited before start:
 
  .\packer\packer.pkvars.hcl
+ 
  .\terraform\terraform.tfvars
 
  For Aws access this project does not provide any way to put Aws Key and Secret, then it is a requirement, to define it in Aws Cli configuration.
