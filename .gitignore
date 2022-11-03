@@ -1,0 +1,8 @@
+terraform/terraform.tfstate
+terraform/.terraform/
+terraform/terraform.tfstate.backup
+terraform/*.pem
+packer/*.json.lock
+packer/*.json
+terraform/.terraform.lock.hcl
+terraform/.terraform.tfstate.lock.info
