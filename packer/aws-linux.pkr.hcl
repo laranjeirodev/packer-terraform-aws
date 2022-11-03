@@ -1,10 +1,10 @@
 variable "region" {
-  type = string
+  type    = string
   default = "eu-west-2"
 }
 
 variable "ami_name" {
-  type = string
+  type    = string
   default = "packer-amazon2-aws-{{timestamp}}"
 }
 
@@ -13,9 +13,9 @@ source "amazon-ebs" "linux" {
   instance_type = "t2.micro"
   region        = var.region
   tags = {
-    "Created-by"  = "Packer"
+    "Created-by" = "Packer"
   }
-  
+
   source_ami_filter {
     filters = {
       name                = "amzn2-ami-kernel-*"
@@ -45,7 +45,7 @@ build {
   }
 
   post-processor "manifest" {
-    output = "packer-manifest.json"
+    output     = "packer-manifest.json"
     strip_path = true
   }
 }
